@@ -1,0 +1,53 @@
+<section id="" class="about-section pt-150 mt-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-img wow fadeInUp" data-wow-delay=".5s">
+                    <img src="assets/img/about/about-img.png" alt="" />
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <div class="section-title">
+                        <span class="wow fadeInUp" data-wow-delay=".2s"><b>Cadastrar Vagas</b></span>
+                    </div>
+                    <form>
+                        <div class="form-group mt-2 font-weight-bold">
+                            <label for="formGroupExampleInput">Id</label>
+                            <input class="form-control bg-light" type="text" name="id" [(ngModel)]="vaga.id" placeholder="Digite o nome">
+                        </div>
+                        <div class="form-group mt-2 font-weight-bold">
+                            <label for="formGroupExampleInput">Nome</label>
+                            <input class="form-control" type="text" name="nome" [(ngModel)]="vaga.nome" placeholder="Digite o nome">
+                        </div>
+                        <div class="form-group mt-2 font-weight-bold">
+                            <label for="formGroupExampleInput2">Foto</label>
+                            <input class="form-control" type="text" name="foto" [(ngModel)]="vaga.foto" placeholder="Insira uma foto">
+                        </div>
+                        <div class="form-group mt-2 font-weight-bold">
+                            <label for="formGroupExampleInput">Descrição</label>
+                            <input class="form-control" type="text" name="descricao" [(ngModel)]="vaga.descricao"
+                            id="formGroupExampleInput" placeholder="Digite a descrição">
+                        </div>
+                        <div class="form-group mt-2 font-weight-bold">
+                            <label for="formGroupExampleInput2">Salário</label>
+                            <input class="form-control" type="text" name="salario" [(ngModel)]="vaga.salario" placeholder="Digite o salário">
+                        </div><br>
+                        <div class="btn-group mt-2" role="group" aria-label="Exemplo básico">
+                            <button type="button" (click)="cadastrar()"
+                                class="btn btn-primary btn-hover rounded-pill">Cadastrar</button>&nbsp;&nbsp;&nbsp;
+                            <button type="button" (click)="atualizar(vaga.id)"
+                                class="btn btn-success btn-hover rounded-pill">Atualizar</button>&nbsp;&nbsp;&nbsp;
+                            <button type="button" (click)="excluir(vaga.id)"
+                                class="btn btn-danger btn-hover rounded-pill">&nbsp;Excluir&nbsp;</button>
+                        </div>
+                    </form>
+                </div>
+            </div><br>
+            <div class="d-flex justify-content-center my-5">
+                <a routerLink="/mural" class="main-btn btn-hover wow fadeInUp text-white rounded-pill"
+                    data-wow-delay=".6s">Voltar >></a>
+            </div>
+        </div>
+    </div>
+</section>

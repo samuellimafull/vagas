@@ -1,0 +1,25 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "nome": "Samuel Lima",
+      "foto": "img-1.png",
+      "descricao": "Dev. Angular",
+      "salario": 5000
+    },
+    {
+      "id": 2,
+      "nome": "Marlon Santos",
+      "foto": "img-2.png",
+      "descricao": "Professor",
+      "salario": 4000
+    },
+    {
+      "id": 3,
+      "nome": "Simone Lins",
+      "foto": "img-5.png",
+      "descricao": "Vendedora",
+      "salario": "3123"
+    }
+  ]
+}
